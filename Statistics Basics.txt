@@ -1,7 +1,7 @@
 CH1
 CH2
 CH3
-Ch4
+CH4 - Numerical descriptive Techniques
     Measure of linear Relationship
         Covariance, Coefficient of correlation, coefficient of determination
         Covariance - when 2 variable move in the same direction; covariance is large positive #
@@ -22,5 +22,38 @@ Ch4
                     measures the amount of variation in the dependent variable that is 
                     explained by the variation int he indepedent variable
                     e.g r2 = 0.75. 75% of variation is explained by X. 25% is unexplained
+
+General Guidelines for Exploring the data
+    1) approx center of the distribution
+    2) are they widely dispersed
+    3) unimodal, bimodal, or multimodal, where are the peaks & valleys
+    4) distribution symmetric, skewed etc.
+
+CH5 - Data Collection & Sampling
+    Data Collection - observation, surveys, experiments
+    Sampling
+            Cost hence sampling 
+            Sampling could be biased; make sure that it represents the population in as much as 
+            many aspects as possible
+
+            Types
+                1) Random Sampling - equaly likely
+                2) Stratified Random Sampling
+                    Obtained by seperating the population into mutually exclusive strate then simple random sampling 
+                3) Cluster Sample
+                     simple random sample of groups
+
+    Error of Sampling
+        Sampling error & non sampling error
+        Sampling Error - error we expect to occur when we make a statement 
+            about the population based on the sample statistics.
+        Non Sampling Error
+            1) Error in data acquisition
+            2) Non response error
+            3) Selection biased
+            
+
+
+
 
         
