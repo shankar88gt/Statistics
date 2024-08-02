@@ -1,0 +1,26 @@
+CH1
+CH2
+CH3
+Ch4
+    Measure of linear Relationship
+        Covariance, Coefficient of correlation, coefficient of determination
+        Covariance - when 2 variable move in the same direction; covariance is large positive #
+                     when 2 variable move in the opp direction; covariance is large negative #
+                     a small covariance #, hard to say
+                     the sign is imp & tells us the nature of Relationship
+                     Magnitute is diff to judge - we can improve by coefficient of correlation
+        Coefficient of correlation - values -1,0,+1, formula - covariance / SD( individual )
+                    -1 - negative linear Relationship
+                    +1 - perfect positive Relationship
+                    0 - no Relationship
+                    drawbacks - except for -,0,1 - we cannot imterpret the correlation
+                    e.g. -0.4 - negative Relationship & its weak as 0.4 is cose to 0
+                        set1 = 0.943 ( positive & close to 1 )
+                        set2 = -0.943 ( negative)
+                        set3 = -0.189 ( almost no Relationship)
+        coefficient of determination - R^2
+                    measures the amount of variation in the dependent variable that is 
+                    explained by the variation int he indepedent variable
+                    e.g r2 = 0.75. 75% of variation is explained by X. 25% is unexplained
+
+        
