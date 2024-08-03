@@ -51,7 +51,38 @@ CH5 - Data Collection & Sampling
             1) Error in data acquisition
             2) Non response error
             3) Selection biased
-            
+
+CH6 - Probability
+    Experiment & Outcomes - flip a coin, head or tails
+    outcomes to be exhaustive & Mutually exclusive
+    Sample space - list of all possible outcomes
+    Requirment of Probability
+        1) P(O) between 0 & 1
+        2) Sum of prob of all outcomes = 1    
+    Event
+      e.g Grade A = {80 - 100}
+      P(Event - pass the course) = P(Grade A) + B + C + D 
+
+    Joint, Marginal & Conditional Probability
+        Joint Probability - intersection of 2 events
+                P ( A and B )
+        Marginal Probability - computed across rows or columns; are so names because 
+            they are calculated across the margins
+            e.g Top 20 Mba prog , Fund outperforms market
+            P(A1 and B1) + P(A1 and B2) - see pg 180
+            Conditional Probability - P(B1|A1) A1 is given Probability
+            P(A|B) = p(A&B) / p(B)
+        Independence - prob one one does not affect the other
+            p(A|B) = P(A)
+        Union - A or B or Both
+        Compliment Rule
+            P(Ac) = 1- P(A)
+        Multiplication rule - p(A&B) = P(B)*P(A|B)
+        Multiplication rule - p(A&B) = P(B)*P(A) - Independent event 
+        Addition Rule - P(AorB) = P(A)+P(B) - P(A&B)
+        Addition Rule - P(AorB) = P(A)+P(B) - Mutually exclusive 
+        
+
 
 
 
