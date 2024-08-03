@@ -81,7 +81,62 @@ CH6 - Probability
         Multiplication rule - p(A&B) = P(B)*P(A) - Independent event 
         Addition Rule - P(AorB) = P(A)+P(B) - P(A&B)
         Addition Rule - P(AorB) = P(A)+P(B) - Mutually exclusive 
-        
+
+        Probability Trees
+            P(B) = P(A&B) + P(Ac&B)
+            Prior Probability - Prior
+            Likelihood Probability - beyond this book
+            Posterior Probability or revised  - after
+            Watch kilian weinbeirger vedios
+            Bayes law - replacement for Probability Trees
+            P(Ai|B) = P(Ai)P(B|Ai) / (P(A1)P(B|A1) + P(A2)P(B|A2) ...... + P(Ak)P(B|Ak)   )
+
+CH7 - Random Variable & Probability distribution
+    Random Variable - Function or rule tht assigns a number to each outcome of an Experiment
+    Discrete random variable & continuous random variable
+    Probability distribution is a graph or table that describes values of a random variable and the probability associated with it
+    P(X=x) or P(x)
+    population mean is the weighted avg of all its values. these weghts are probabilities. this is also called expected value of x i.e E(X)
+
+    Population Mean E(X) = mu = sum(xP(X))
+    Population variance V(X) = sigma^2 = sum((x-mu)^2 * P(x))
+
+    Laws of Expected value
+    E(c) = c 
+    E(X+c) =  E(X) + c 
+    E(cX) = cE(X)
+
+    Laws of Variance
+    V(c) = 0
+    V(X+c) =  V(X)
+    V(cX) = c^2V(X)
+
+    Sum of 2 variables
+
+    Laws of Expected value & Variance of he sum of 2 variables
+    E(X+Y) = E(X) + E(Y)
+    V(X+Y) =  V(X) + V(Y) + 2COV(X,Y) ; COV(X,Y) = 0 if X, Y are independent
+    
+    Binomial Experiment
+        Fixed no of trails
+        2 possible outcomes
+        the trails are independent. outcome of one trail doesnt affect outcome of another
+
+        P(x) = (n! / (x!(n-x)!))Px(1-P)^n-x
+
+    Poisson Rndom Variable
+        number of success that occur in a period of time / interval of space
+
+    Poisson Experiment
+        the # of success that occur in any interval in independent of the # of success in any other interval
+        the prob of success is same for all equal size interval
+        the prob of success is proportional to interval size
+
+        P(x) = e-Mu Mu^x / x!
+
+CH8 - Continuous Probability Distributions
+    
+
 
 
 
