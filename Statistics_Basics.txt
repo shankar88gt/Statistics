@@ -61,7 +61,7 @@ CH6 - Probability
         2) Sum of prob of all outcomes = 1    
     Event
       e.g Grade A = {80 - 100}
-      P(Event - pass the course) = P(Grade A) + B + C + D 
+      P(Event - pass the course) = P(Grade A) + B + C + D
 
     Joint, Marginal & Conditional Probability
         Joint Probability - intersection of 2 events
@@ -102,8 +102,8 @@ CH7 - Random Variable & Probability distribution
     Population variance V(X) = sigma^2 = sum((x-mu)^2 * P(x))
 
     Laws of Expected value
-    E(c) = c 
-    E(X+c) =  E(X) + c 
+    E(c) = c
+    E(X+c) =  E(X) + c
     E(cX) = cE(X)
 
     Laws of Variance
