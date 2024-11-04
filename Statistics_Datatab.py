@@ -128,13 +128,176 @@ Inferential Statistics - draw conclusions based on sample data about the populat
                     I might be interested to know if there is difference in age between people who use datatab, spss or R
                     Research question:
                         is there a difference in population between the diff groups of the independent variable w.r.t the dependent variable
-                            Independent variable -  Datatab, spss, R
-                            Dependent variable - age
+                            Independent variable -  Datatab, spss, R ( one nomical variable )
+                            Dependent variable - age ( Metric )
                             population - inferential statistics based on sample
                         Hypothesis
                             Null -  There are no differences between the population between the means of individual groups
                             Alternate :  atleast 2 groups differ from each other in the population
-                            
+            ANOVA ( TWo WAY )
+                Statistical method used to test the effect of 2 categorical variables on a continuous variables
+                e.g.  drug type - A , B  & Gender - male & Female ( Factors - Nominal variable )
+                      blood pressure - metric - continuous variable
+                    
+                What kind of statements can we make with a ANOVA?
+                    Does factor 1 have an effect on the dependent variable
+                    does factor 2 have an effect on the dependent variable
+                    is there an interaction between factor 1 & factor 2
+                
+                Hypothesis?
+                    H0:
+                        there is no significant diff between groups of the first factor
+                        there is no significant diff between groups of the second factor
+                        one factor has no effect on the other factor
+                    H1:
+                        There is a significance diff between the groups of the first factor
+                        There is a significance diff between the groups of the second factor
+                        atleast one factor has an influence on the other factor
+                    
+                    Assumptions
+                        Normally distributed - within the groups or alternatively the residuals shd be normal distributed - quantile-quantile plot
+                        homogeneity of variances - levene's test
+                        independence on mesurements - one group shd not be influenced by other group
+                        metric scale level
+                    
+                    ANOVA - Analysis of variances?
+                    in Two way
+                    SStot = SSa + SSb + SSab + SSerr
+                    total variance of the dependent variable
+                    a - variance explained by factor a
+                    b - variance explained by factor b
+                    ab - variance explained by interaction of factors A & B
+                    err = the error variance
+                    SS = sum of squares
+
+                    e.g sstot has some variance - if that variance is explaned then SSa,ssb, SSab will cover majority and very littlee on err 
+                    F distribution & P value
+                    degree of freedom - n - no of people , p,q - no of categories 
+
+                    Fcal > Fcric then H0 is rejected 
+
+                    e.g - https://datatab.net/statistics-calculator/hypothesis-test/two-way-anova-calculator?example=two_way_anova_medicine
+            
+            Repeated measures ANOVA
+                something similar to paired samples. same group measured at different times 
+                e.g investigate effectives of a training program at 1) before the training  2) immediatly after training completion 3) after 2 months
+                The dependents samples, the same test units are measured several times under diff conditions
+
+                What the hypothesis?
+                    H0: there are no differences between the dependent groups - traning has no influence
+                    H1 : there is a diff between the dependent groups - traning has influence
+                
+                What are the assumptions?
+                    Normality  - not normal then non parametric 
+                    Sphericity - the variances of the diff between all combinations of factor levels ( time points ) shd be the same  - Mauchly's test of sphericity
+                       if P value > 0.05 then the variances are equal 
+                
+                if P < 0.05 then H1. do Bonferroni post-hoc tests to identify which group has that difference
+
+                F distribution table and then P value 
+
+            Mixed Model ANOVA - 2 two way ANOVA with repeated measues
+                 A mixed model ANOVA is a statistical method used to analyze data that involve both between subject factors and within subject factors
+                 e.g we want to test different diets ( A, B, C) has any effect in chlestrol levels
+                 Between subjects factor ( groups with diets A, B & C)
+                 Within subjects factors ( group with diest A measured at different intervals )
+                 Mixed Model = One Way ANOVA + Repeated Mesures ANOVA
+
+                 Factor 1 -  A, B & C
+                 Factor 2 - measurement at diff time intervals
+
+                 Answers to
+                    Does the within subject factor have an effect? - diff time intervals
+                    Does the between subject have an effect?  A, B & C
+                    is there any interaction between 2 factors
+
+                Hypothesis
+                    H0: 
+                        Within Subject:
+                            the mean values of the different measurement time points do not differ
+                        between subjects
+                            The mean values of the different groups of between subject factor do not differ
+                        interaction
+                            one factor has no incluence on the other factor
+                    
+                Assumptions
+                    Normally distributed
+                            very strict in case of small sample size
+                            ANOVA is somewhat robust to violations of normality in large sample size
+                    Homogeneity of variances - levene test
+                        Needs to be true for both between subjects and within subjects factors
+                    Homogeneity of covariances ( Sphericity ) - mauchly's test - when violated ( Greenhouse-geisser or huynn feldt )
+                        this applies to within subjects factor - the variances of the diff between all combinations of diff groups are equal
+                            e.g. factor 2 - measurements at diff times
+                                    grp1 - grp2 , grp1 - grp3, grp2 - grp3
+                    No significant outliers
+                        outliers can have a dispropotionate effect on ANOVA potentially leading to incorrect results
+                    
+                    e.g. - https://datatab.net/statistics-calculator/hypothesis-test/mixed-model-anova-calculator?example=two_factorial_anova_with_repeated_measures
+
+                    Bonferroni Post-hoc-Tests can be done to understand the direction
+                        Bonferroni Post-hoc-Tests factor 1
+                        Bonferroni Post-hoc-Tests factor 2
+
+            Parametric & Non parametric test - normality violations
+                first check the assumptions 
+                if the data is normally distributed then parametric tests
+                    t-test, ANOVA or peasons corelation
+                if the data is not normally distributed then Non parametric tests
+                    Mann Whitney U test or spearmans's corelation
+                what about other assumptions? fewer than parametrics.
+                    if so then why parametrics test at all
+                        parametrics test are more powerfull; if possible always use paramteric tests
+                    
+                    Parametric Test - Raw data
+                    Non Parametrics test - Ranks of the data
+                
+                Goal                                        Parmetric test                        Non Parametric test
+                One Sample                                  Simple t-test                       Wilcoxon test for 1 sample
+                Two dependent samples                     paired sample t-test                  Wilcoxon Test  
+                Two independent samples                   independent T test                    Mann Whitney U test
+                more than 2 independent samples           One factor ANOVA                      Kruskal Wallis Test
+                more than 2 dependent samples             Repeated Measures ANOVA               Friedman Test
+                corelation between 2 variables            Pearson corelation                    Spearmans rak corelation
+
+            Test For Normal Distribution
+            
+
+
+
+
+
+
+                    
+                    
+
+
+
+
+
+
+
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
 
 
 
