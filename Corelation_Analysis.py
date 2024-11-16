@@ -143,7 +143,7 @@ Correlation & Causality:
            2.b - a controlled experiment in which the variables can be influenced specifically
            2.c - well founded & plausible theory in which direction the causal relationship goes
 
-        
+
 
 
 
