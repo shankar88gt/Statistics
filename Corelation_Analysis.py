@@ -16,7 +16,7 @@
     0.1 < 0.3   low 
     0.3 < 0.5   medium
     0.5 < 0.7   high    
-    0.7 < 1     very high
+    0.7 < 1     very high    
 
     A positive correlation exists when high values of one variable go along with high values of another variable
         e.g. body size & shoe size
@@ -122,8 +122,80 @@
                     to calculate the corelation coefficient, one metric & one dichotomous variable must be present
                     for hypothesis; the one metric variable shd be normally distributed
 
+R2 - Coefficient of determination & R
+         Why shd we care about R2?
+            R2 is similar to R but 
+                Interpretation is easier:
+                    its not obvious that R=0.7 is twice as good as R = 0.5
+                    However R2=0.7 is what it looks like 1.4 times as good as R2=0.5
+                    Easy to calculate
+
+        e.g mouse weight ( y ) and mouse size ( x)
+                Variation in the data = sum( weight for mouse i - mean )**2
+
+            Question - given the mouse size, is the mean value of mouse weight the best prediction?
+                        NO!!! we can do better
+                
+                    fit a line; how much better this line compared to the mean? how do we quantify the difference? Ans is R2
+
+                     R2 = var(mean) - Var(line) / var(mean )  -  0 to 1( also a % )
+                        e.g  32 - 6 / 32 => 0.81 => 81%
+                             There is 81% less variation around the line than the mean / the size/weight relationship accounts for 81% of the variation
+                        
+            What about R?
+                R2 is just the square of R
+                How much better is R=0.7 than R=0.5             
+                R2 = 0.7*0.7 = 0.49  - 50% variation explanined
+                R2 = 0.5*0.5 = 0.25  - 25% variation explaned; hence 0.7 is 100% better than 0.5 R
+
+            R2 does not indicate the direction of the corelation becuase squarred number are not negative.
+
+    Standard Errors
+        The 3 common error bars
+        1) Standard Deviations
+                How the data is distributed around the mean
+                big deviations tell u the data is far from mean
+        2) Standard Error
+                These tell you how the mean is distributed
+        3) Confidence intervals
+                These are related to std errors
+
+        More about 2
+             1) Normal distribution
+                    1 STD - 68% for data
+                    2 STD - 95% for the data 
+
+                for 1 sample ( cannot do it for the entire pop - inferential statistics)        
+                    Mean & STD
+                for 2 sample 
+                    mean & STD
+                similarly for 5-6 sample - calculate mean & STD
+
+            The Standard error is basicaly the STD of means from sample 1 thru 6.
+                    The means are relatively closer to each other; becuase of the normal distribution
+                    The STD of means wont be as big as STD of the data
+                This gives us a sense of how much variatio we can expect in our means if we took a bunch of independent 5 measurements
+
+            we can also take the STD of the STD. this is called Standard error of the STD
+            You can calculate the STD ( Std deviation ) of any statistic that u calculate for multiple samples and get the Standard error 
+
+        Tip - you can do bootstrapping for mutiple sample and calculate the Standard error.
+
+    Covariance
+        population Mean ( Mu )  - estimated using sample
+        population standard deviation ( std_p ) - estimated using sample
+        sample mean ( xbar )
+        sample standard deviation 
+        Var( x - xbar / n-1 ) , std = sqrt(var)
+        xbar is close when the sample size is large
+            n-1 => sample underestimates and to compensate we use n-1
+
+        
 
 
+
+
+                                        
 Correlation & Causality:
     Causality is the relationship between cause & an effect; i.e we have a cause and the resultant effect
     e.g drinking coffee -> caffenine ( stimulating substance) -> alertness ( effect )

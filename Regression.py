@@ -26,7 +26,7 @@ Regression Analysis makes it possible to infer or predict a variable on the basi
 
         y = mx + C
             m - slope
-            c - receptor point
+            c - receptor point / intercept
 
         m = r * sy/sx
         C = ymean - b*xmean
@@ -100,7 +100,21 @@ Regression Analysis makes it possible to infer or predict a variable on the basi
                 N-1 dummy variable is created so 2 variables is sufficient ( issedan & issports is enough and the 3rd is redundant )
         
     Logistic Regression
-        
+            Depedent variable is a dichotomous Variable - 0 or 1
+                y axis ( target ) is transformed from the probability to the log( odds of obesity ). so the y axis can go from -infinity to + infinity
+                log( odds of obesity ) = log(p/1-p)
+                
+            Scatter plot of 1 & 0 -  a straight line doesnt work 
+                The goal of logistic regression is to estimate the probability of occurance , not the value of the variable itself
+                The logistic function is used - only 0 / 1 are possible
+                    1 / 1 + e ^ -z
+                    z = (b1x1 + b2x2 + b3x3 + ........ + a)
+
+            Now we to solve for coefficient inorder to best represent the data
+                Maximum likehood Function 
+                 
+
+
 
         
 
